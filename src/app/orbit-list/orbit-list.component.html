@@ -1,0 +1,17 @@
+<h3>Orbit Report</h3>
+<table>
+   <tr class="header-row">
+      <th class="sortable">Name</th>
+      <th class="sortable">Type</th>
+      <th>Operational</th>
+      <th>Orbit Type</th>
+      <th>Launch Date</th>
+   </tr>
+   <tr *ngFor ="let myVariable of satellites">{{myVariable.name}}> <!-- Loop through each satelite using that ngFor -->
+      <td>{{myVariable.name}}</td> <!-- Inject the satelite into the <td> tag -->
+      <td>{{myVariable.type}}</td>
+      <td>{{myVariable.operational}}</td>
+      <td>{{myVariable.orbitType}}</td>
+      <td>{{myVariable.launchDate}}</td>
+   </tr>
+</table>
