@@ -10,6 +10,13 @@ export class Satellite {
         this.type = type
         this.operational = operational
         this.launchDate =launchDate
-   
+    }
+
+    shouldShowWarning() {
+        if (this.type.toUpperCase() === 'SPACE DEBRIS') {
+            return true
+        } else {
+            return false
+        }
     }
 }
